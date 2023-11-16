@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+
+#tabela {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    margin-top: 120px;
+}
+
+img {
+    padding: 0 10px;
+}
+
+div.logo {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(0, 22, 93);
+}
+
+
+nav {
+    background-color: rgb(0, 22, 93);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    margin: 15px;
+    font-family: Georgia;
+    color: white;
+}
+
+#titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+li:hover, button:hover{
+    background-color: rgb(19, 74, 255);
+}
+
+button {
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: white;
+    font-size: 30px;
+    padding: 2px 8px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    div {
+        height: 90px;
+
+    }
+    /* div p {
+        position: absolute;
+    } */
+
+    button{
+        display: block;
+    }
+
+    button:focus -- ul{
+        height: 200px;
+        display: block;
+    }
+    nav, ul {
+        flex-direction: column;
+        align-items: unset;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    /* li{
+        border: 1.5px white solid;
+    } */
+    
+}
+
