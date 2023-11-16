@@ -27,7 +27,7 @@ h1 {
 
 body {
     margin: 0;
-    margin-top: 120px;
+    margin-top: 110px;
 }
 
 img {
@@ -66,8 +66,8 @@ ul {
 
 a {
     text-decoration: none;
-    margin: 15px;
     font-family: Georgia;
+    font-size: 15px;
     color: white;
 }
 
@@ -82,6 +82,7 @@ li {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    padding: 15px;
 }
 
 li:hover, button:hover{
@@ -98,37 +99,41 @@ button {
     cursor: pointer;
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 18px;
     display: none;
 }
 
 @media (max-width: 800px) {
-    div {
-        height: 90px;
-
+    .logo {
+        height: 80px;
+        border-bottom: 1px solid white;
     }
-    /* div p {
-        position: absolute;
-    } */
 
     button{
-        display: block;
+        display: flex;
     }
 
-    button:focus -- ul{
-        height: 200px;
-        display: block;
+    button:focus ~ ul{
+        max-height: 280px;
+        transition: max-height 0.5s ease;
     }
+    
     nav, ul {
         flex-direction: column;
-        align-items: unset;
+        align-items: stretch;
         height: auto;
         padding: 0px;
         margin: 0px;
     }
-    /* li{
-        border: 1.5px white solid;
-    } */
     
+    ul {
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+    li{
+        padding:12px;
+        border-bottom: 1.5px white solid;
+    }
 }
 
