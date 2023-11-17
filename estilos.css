@@ -99,8 +99,22 @@ button {
     cursor: pointer;
     position: absolute;
     right: 30px;
-    top: 18px;
+    top: 16px;
     display: none;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    width: 85%;
+}
+
+th, tr, td {
+    padding: 5px;
+}
+
+:target {
+    scroll-margin-top: 100px;
 }
 
 @media (max-width: 800px) {
