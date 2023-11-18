@@ -6,6 +6,10 @@
     margin-right: 24rem;
     margin-left: 24rem;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -169,6 +173,11 @@ p#chamada {
     scroll-margin-top: 100px;
 }
 
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
 @media (max-width: 800px) {
     div {
         height: 90px;
@@ -197,3 +206,6 @@ p#chamada {
     
 }
 
+:target ~ nav {
+    display: none;
+}
