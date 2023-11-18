@@ -40,6 +40,10 @@ body {
     background-color: #FCF5E5;
 }
 
+p {
+    text-align: justify;
+}
+
 #logo {
     padding: 0 10px;
 }
