@@ -45,10 +45,8 @@ p {
 
 body {
     margin: 0;
-    margin-top: 110px;
-    background-color: #FCF5E5;
+    margin-top: 120px;
 }
-
 #logo {
     padding: 0 10px;
 }
@@ -73,7 +71,6 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
-    border-bottom: 1px solid #FCF5E5;
 }
 
 ul {
@@ -102,6 +99,7 @@ li {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    padding: 15px;
     padding: 15px;
 }
 
@@ -172,13 +170,13 @@ p#chamada {
 }
 
 @media (max-width: 800px) {
-    p#chamada {
-        font-size: 20px;
+    div {
+        height: 90px;
+
     }
-    .logo {
-        height: 80px;
-        border-bottom: 1px solid #FCF5E5;
-    }
+    /* div p {
+        position: absolute;
+    } */
 
     button{
         display: flex;
@@ -197,13 +195,5 @@ p#chamada {
         margin: 0px;
     }
     
-    ul {
-        max-height: 0;
-        overflow: hidden;
-    }
-    
-    li{
-        padding:12px;
-        border-bottom: 1.5px #FCF5E5 solid;
-    }
 }
+
