@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.container {
+    margin-right: 24rem;
+    margin-left: 24rem;
+}
 
 h1 {
     text-align: center;
