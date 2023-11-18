@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 h1 {
     text-align: center;
@@ -152,6 +155,11 @@ p#chamada {
     scroll-margin-top: 100px;
 }
 
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
 @media (max-width: 800px) {
     p#chamada {
         font-size: 20px;
@@ -187,4 +195,8 @@ p#chamada {
         padding:12px;
         border-bottom: 1.5px white solid;
     }
+}
+
+:target ~ nav {
+    display: none;
 }
