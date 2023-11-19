@@ -12,6 +12,12 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
 .sobre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,6 +37,11 @@ h1 {
 body {
     margin: 0;
     margin-top: 110px;
+    background-color: #FCF5E5;
+}
+
+p {
+    text-align: justify;
 }
 
 #logo {
@@ -43,12 +54,12 @@ div.logo {
 }
 
 header {
-    background-color: rgb(0, 22, 93);
+    background-color: #011638ff;
 }
 
 
 nav {
-    background-color: rgb(0, 22, 93);
+    background-color: #011638ff;
     height: 80px;
     width: 100%;
     display: flex;
@@ -57,7 +68,7 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FCF5E5;
 }
 
 ul {
@@ -72,13 +83,13 @@ a {
     text-decoration: none;
     font-family: Georgia;
     font-size: 15px;
-    color: white;
+    color: #FCF5E5;
 }
 
 #titulo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    color: white;
+    color: #FCF5E5;
     font-size: 18px;
 }
 
@@ -96,10 +107,10 @@ li:hover, button:hover{
 button {
     background-color: transparent;
     border-radius: 15px;
-    border-color: white;
+    border-color: #FCF5E5;
     font-size: 30px;
     padding: 2px 8px;
-    color: white;
+    color: #FCF5E5;
     cursor: pointer;
     position: absolute;
     right: 30px;
@@ -136,19 +147,22 @@ th, tr, td {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    margin-top: 290px;
+    margin-top: 265px;
     transition-duration: 0.4s;
     background-color: rgb(2, 120, 138);
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid #FCF5E5;
 }
 
 p#chamada {
     display: inline-block;
-    margin-top: 50px;
-    color: white;
+    margin-top: 35px;
+    color: #FCF5E5;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 26px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+    width: 80%
 }
 
 :target {
@@ -156,7 +170,7 @@ p#chamada {
 }
 
 section {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -166,17 +180,17 @@ section {
     }
     .logo {
         height: 80px;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #FCF5E5;
     }
 
     button{
         display: flex;
     }
 
-    button:focus ~ ul{
+    /* button:focus ~ ul{
         max-height: 280px;
         transition: max-height 0.5s ease;
-    }
+    } */
     
     nav, ul {
         flex-direction: column;
@@ -189,14 +203,15 @@ section {
     ul {
         max-height: 0;
         overflow: hidden;
+        transition: max-height 0.5s ease; 
+    }
+
+    ul.show {
+        max-height: 280px;
     }
     
     li{
         padding:12px;
-        border-bottom: 1.5px white solid;
+        border-bottom: 1.5px #FCF5E5 solid;
     }
-}
-
-:target ~ nav {
-    display: none;
 }
