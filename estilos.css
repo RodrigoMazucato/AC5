@@ -18,6 +18,12 @@ h2 {
     font-size: 24px;
 }
 
+h2 {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
 .sobre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -42,6 +48,11 @@ body {
 
 p {
     text-align: justify;
+    background-color: #FCF5E5;
+}
+
+p {
+    text-align: justify;
 }
 
 #logo {
@@ -55,10 +66,12 @@ div.logo {
 
 header {
     background-color: #011638ff;
+    background-color: #011638ff;
 }
 
 
 nav {
+    background-color: #011638ff;
     background-color: #011638ff;
     height: 80px;
     width: 100%;
@@ -68,6 +81,7 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
+    border-bottom: 1px solid #FCF5E5;
     border-bottom: 1px solid #FCF5E5;
 }
 
@@ -84,11 +98,13 @@ a {
     font-family: Georgia;
     font-size: 15px;
     color: #FCF5E5;
+    color: #FCF5E5;
 }
 
 #titulo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    color: #FCF5E5;
     color: #FCF5E5;
     font-size: 18px;
 }
@@ -108,8 +124,10 @@ button {
     background-color: transparent;
     border-radius: 15px;
     border-color: #FCF5E5;
+    border-color: #FCF5E5;
     font-size: 30px;
     padding: 2px 8px;
+    color: #FCF5E5;
     color: #FCF5E5;
     cursor: pointer;
     position: absolute;
@@ -147,10 +165,11 @@ th, tr, td {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    margin-top: 290px;
+    margin-top: 265px;
     transition-duration: 0.4s;
     background-color: rgb(2, 120, 138);
     border-radius: 10px;
+    border: 2px solid #FCF5E5;
     border: 2px solid #FCF5E5;
 }
 
@@ -159,7 +178,10 @@ p#chamada {
     margin-top: 50px;
     color: #FCF5E5;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 26px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+    width: 80%
 }
 
 :target {
@@ -178,16 +200,17 @@ section {
     .logo {
         height: 80px;
         border-bottom: 1px solid #FCF5E5;
+        border-bottom: 1px solid #FCF5E5;
     }
 
     button{
         display: flex;
     }
 
-    button:focus ~ ul{
+    /* button:focus ~ ul{
         max-height: 280px;
         transition: max-height 0.5s ease;
-    }
+    } */
     
     nav, ul {
         flex-direction: column;
@@ -200,10 +223,16 @@ section {
     ul {
         max-height: 0;
         overflow: hidden;
+        transition: max-height 0.5s ease; 
+    }
+
+    ul.show {
+        max-height: 280px;
     }
     
     li{
         padding:12px;
+        border-bottom: 1.5px #FCF5E5 solid;
         border-bottom: 1.5px #FCF5E5 solid;
     }
 }
