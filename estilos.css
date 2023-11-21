@@ -17,6 +17,14 @@ h2 {
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 26px;
+    /* border-bottom: 2px solid #333;
+    padding-bottom: 5px; */
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 3px;
 }
 
 section.container {
@@ -63,11 +71,19 @@ img {
 }
 
 #sobreposicao, #emaranhamento, #interferencia, #entrelacamento, #evolucao {
-    width: 48%;
+    width: 48.5%;
     text-align: center;
     border: 3px dashed #011638ff;
     padding: 5px 30px;
 }
+
+#recursos p {
+    font-size: 17px;
+    text-align: center;
+    text-indent: 0;
+    margin-top: 45px;
+}
+
 
 body {
     margin: 0;
@@ -171,7 +187,7 @@ table {
 #tabela_comparativa {
     margin-top: 60px;
     padding-top: 10px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
     border: 3px dashed #011638ff;
 }
 
@@ -196,7 +212,13 @@ th {
     text-align: center;
 }
 
-#botao {
+#botoes {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.botao {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: bold;
@@ -214,6 +236,10 @@ th {
     color: white;
 }
 
+.botao:hover {
+    background-color: rgb(0, 191, 221);
+}
+
 p#chamada {
     display: inline-block;
     margin-top: 40px;
@@ -225,7 +251,7 @@ p#chamada {
     width: 85%;
 }
 
-#comoingressar h2:before {
+#comoingressar h2:before, #aplicacoes h2:before, #desafios h2:before {
     content: "▶ ";
     letter-spacing: 4px;
 }
@@ -234,7 +260,53 @@ p#chamada {
     scroll-margin-top: 110px;
 }
 
+#depoimentos {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 34px;
+}
+
+#dep1, #dep2 {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+    text-indent: 0;
+    width: 50%;
+    padding: 10px 25px;
+    border: 4px dotted #011638ff;
+    border-radius: 20px;
+}
+
+#dep1 p, #dep2 p {
+    font-size: 17.3px;
+    font-style: italic;
+    line-height: 25px;
+    text-indent: 0;
+}
+
+#comoingressar ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style-type: disc;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.educacao {
+    margin-bottom: 15px;
+}
+
+#desafios h1 {
+    margin-top: 40px;
+}
+
 @media (max-width: 910px) {
+    #depoimentos {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    #dep1, #dep2 {
+        width: 100%;
+    }
     #qubit, #quantum {
         width: 50%;
     }

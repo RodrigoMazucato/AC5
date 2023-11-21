@@ -6,6 +6,7 @@
     <link rel="icon" href="imagens/icone.png">
     <link rel="stylesheet" href="estilos.css">
     <title>Sobre a computação quântica</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header id="cabecalho">
@@ -22,7 +23,7 @@
                 <li><a href="#aplicacoes">Aplicações práticas</a></li>
                 <li><a href="#desafios">Desafios e oportunidades</a></li>
                 <li><a href="#matematica">Matemática aplicada</a></li>
-                <li><a href="#">Perguntas frequentes</a></li>
+                <li><a href="perguntas.html">Perguntas frequentes</a></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +41,10 @@
 
             <div id="banner">
                 <p id="chamada">Explore o universo da computação quântica e embarque nessa jornada transformadora!</p><br>
-                <a href="#sobre" id="botao">SAIBA MAIS</a>
+                <div id="botoes">
+                    <a href="#sobre" class="botao">SAIBA MAIS</a>
+                    <a href="perguntas.html" class="botao">PERGUNTAS FREQUENTES</a>
+                </div>
             </div>
         </section>
         <section class="container" id="sobre">
@@ -155,27 +159,25 @@
                         <td>- Desafios significativos em hardware e estabilidade.</td>
                     </tr>
                 </table>
+                <div id="recursos">
+                    <p>No site <a href="https://universosquanticos.wordpress.com" target="_blank">Universos Quânticos</a> você encontra diversos conteúdos, artigos, livros, entrevistas e até glossário sobre a computação quântica.</p>
+                </div>
             </div>
         </section>       
         <section class="container" id="comoingressar">
             <h1 style="margin: 50px 0">Como ingressar na área de computação quântica:</h1>
             <h2>Fundamentos de Computação Quântica:</h2>
-            <p>Comece estudando os fundamentos da computação quântica, incluindo princípios quânticos e computação quântica. Livros como "<a href="https://www.amazon.com/Quantum-Computation-Information-10th-Anniversary/dp/1107002176" target="_blank">Quantum Computation and Quantum Information</a>" de Michael Nielsen e Isaac Chuang são excelentes recursos.</p>
-                
-            <h2>Cursos Online:</h2>
-            <p>Plataformas como Coursera, edX e Udacity oferecem cursos de introdução à computação quântica. O curso
-                "<a href="https://www.coursera.org/articles/quantum-machine-learning" target="_blank">Quantum Machine Learning</a>" no Coursera, ministrado por Peter Wittek, é um exemplo.</p>
-                
+            <p>Comece estudando os fundamentos da computação quântica, incluindo princípios quânticos e computação quântica. Livros como "<a href="https://www.amazon.com/Quantum-Computation-Information-10th-Anniversary/dp/1107002176" target="_blank">Quantum Computation and Quantum Information</a>" de Michael Nielsen e Isaac Chuang são excelentes recursos. Além disso, plataformas como Coursera, edX e Udacity oferecem cursos de introdução à computação quântica. O curso "<a href="https://www.coursera.org/articles/quantum-machine-learning" target="_blank">Quantum Machine Learning</a>" no Coursera, ministrado por Peter Wittek, é um exemplo.</p>
             <h2>Programação Quântica:</h2>
             <p>Aprenda a programar em linguagens quânticas como Qiskit (para IBM Quantum) ou Cirq (para Google's Quantum Computing). Ambas as plataformas têm documentação abrangente e tutoriais.</p>
-            <ul style="list-style-type: disc; font-size: 18px; padding-left: 20px;">
+            <ul style="font-size: 17px">
                 <li><a href="https://qiskit.org/documentation/" target="_blank">Qiskit Documentation</a></li>
                 <li><a href="https://quantumai.google/cirq" target="_blank">Cirq Documentation</a></li>
             </ul>
             
             <h2>Laboratórios Quânticos Online:</h2>
-            <p>Experimente laboratórios quânticos online para ganhar experiência prática. IBM Quantum Experience e Google Quantum Playground são boas opções.</p>
-            <ul style="list-style-type: disc; font-size: 18px; padding-left: 20px;">
+            <p>Experimente laboratórios quânticos online para ganhar experiência prática. IBM Quantum Experience e Google Quantum Playground são boas opções. Essas plataformas oferecem ambientes virtuais que permitem experimentar e compreender os princípios fundamentais da física quântica, contribuindo para o aprimoramento de habilidades práticas na área.</p>
+            <ul style="font-size: 17px">
                 <li><a href="https://quantum-computing.ibm.com" target="_blank">IBM Quantum Experience</a></li>
                 <li><a href="https://www.quantumplayground.net/#/home" target="_blank">Google Quantum Playground</a></li>
             </ul>
@@ -186,8 +188,8 @@
         
             <h2>Eventos e Conferências:</h2>
             <ul>
-                <li><strong>Google Scholar:</strong> O Google Scholar é uma excelente ferramenta para procurar artigos acadêmicos e conferências na área de computação quântica. Você pode encontrar informações sobre eventos futuros e passados.</li>
-                <li><strong>IEEE Xplore:</strong> A biblioteca digital do IEEE (Institute of Electrical and Electronics Engineers) contém uma variedade de recursos, incluindo conferências e eventos na área de computação quântica.</li>
+                <li class="educacao"><strong>Google Scholar:</strong> O Google Scholar é uma excelente ferramenta para procurar artigos acadêmicos e conferências na área de computação quântica. Você pode encontrar informações sobre eventos futuros e passados.</li>
+                <li class="educacao"><strong>IEEE Xplore:</strong> A biblioteca digital do IEEE (Institute of Electrical and Electronics Engineers) contém uma variedade de recursos, incluindo conferências e eventos na área de computação quântica.</li>
                 <li><strong>ACM Digital Library:</strong> A ACM (Association for Computing Machinery) Digital Library é outra fonte valiosa para encontrar informações sobre conferências, workshops e eventos relacionados à computação quântica.</li>
             </ul>
         
@@ -197,44 +199,129 @@
             <h2>Sites de Organizações Quânticas:</h2>
             <p>Verifique os sites de organizações dedicadas à computação quântica, como o <a href="https://www.euroquic.org" target="_blank">Quantum Industry Consortium</a>, para obter informações sobre eventos e conferências. Essas plataformas fornecem uma visão abrangente das oportunidades de networking e aprendizado, conectando os interessados com os eventos mais relevantes e as últimas tendências em computação quântica.</p>
         
-            <h2>Redes Sociais Acadêmicas:</h2>
-            <p>Plataformas como ResearchGate e Academia.edu podem ser usadas para seguir pesquisadores e ficar atualizado sobre eventos que estão participando e organizando.Essas redes acadêmicas oferecem uma maneira eficaz de estar atualizado com as últimas pesquisas e oportunidades de networking nesse campo em constante evolução.</p>
-        
-            <h2>Redes Sociais Profissionais:</h2>
-            <p>Participe de grupos relacionados à computação quântica no LinkedIn, onde as informações sobre eventos acadêmicos são frequentemente compartilhadas. Essa plataforma profissional oferece uma oportunidade valiosa para se conectar com profissionais e pesquisadores na área, ficando por dentro das últimas novidades e oportunidades de eventos relevantes para a computação quântica.</p>
+            <h2>Redes Sociais Acadêmicas e Profisionais:</h2>
+            <p>Plataformas como ResearchGate e Academia.edu podem ser usadas para seguir pesquisadores e ficar atualizado sobre eventos que estão participando e organizando.Essas redes acadêmicas oferecem uma maneira eficaz de estar atualizado com as últimas pesquisas e oportunidades de networking nesse campo em constante evolução. Participe de grupos relacionados à computação quântica no LinkedIn, onde as informações sobre eventos acadêmicos são frequentemente compartilhadas. Essa plataforma profissional oferece uma oportunidade valiosa para se conectar com profissionais e pesquisadores na área, ficando por dentro das últimas novidades e oportunidades de eventos relevantes para a computação quântica.</p>
         
             <h2>Revistas Científicas e Revistas Especializadas:</h2>
-            <p>Revistas como a "<a href="https://iopscience.iop.org/journal/2058-9565" target="_blank">Quantum Science and Technology</a> e "<a href="https://journals.aps.org/prx" target="_blank">Physical Review X</a>"" muitas vezes destacam eventos e conferências na área de computação quântica. Acompanhar essas publicações é uma maneira eficaz de ficar informado sobre os últimos desenvolvimentos, descobertas e oportunidades de participação.</p>
+            <p>Revistas como a "<a href="https://iopscience.iop.org/journal/2058-9565" target="_blank">Quantum Science and Technology</a>" e "<a href="https://journals.aps.org/prx" target="_blank">Physical Review X</a>" muitas vezes destacam eventos e conferências na área de computação quântica. Acompanhar essas publicações é uma maneira eficaz de ficar informado sobre os últimos desenvolvimentos, descobertas e oportunidades de participação.</p>
         
             <h2>Blogs e Artigos Científicos:</h2>
             <p>O <a href="https://arxiv.org" target="_blank">arXiv</a> é um repositório de artigos científicos onde você pode encontrar trabalhos recentes em computação quântica. Ao explorar esse recurso, é possível manter-se atualizado sobre as últimas pesquisas e descobertas nesse campo dinâmico, proporcionando uma fonte valiosa de informações para profissionais e entusiastas da área.</p>
         
             <h2>Cursos Universitários Online:</h2>
             <ul>
-                <li><strong>MIT (Massachusetts Institute of Technology):</strong> O MIT é conhecido por sua excelência em ciência da computação e engenharia, e oferece cursos e pesquisas na área de computação quântica.</li>
-                <li><strong>Universidade de Waterloo:</strong> A Universidade de Waterloo, no Canadá, é reconhecida por seu Instituto Perimeter de Física Teórica, que se concentra em pesquisa em física quântica e computação quântica.</li>
-                <li><strong>Universidade de Oxford:</strong> A Universidade de Oxford, no Reino Unido, oferece cursos e programas de pesquisa na área de ciência da computação quântica.</li>
+                <li class="educacao"><strong>MIT (Massachusetts Institute of Technology):</strong> O MIT é conhecido por sua excelência em ciência da computação e engenharia, e oferece cursos e pesquisas na área de computação quântica.</li>
+                <li class="educacao"><strong>Universidade de Waterloo:</strong> A Universidade de Waterloo, no Canadá, é reconhecida por seu Instituto Perimeter de Física Teórica, que se concentra em pesquisa em física quântica e computação quântica.</li>
+                <li class="educacao"><strong>Universidade de Oxford:</strong> A Universidade de Oxford, no Reino Unido, oferece cursos e programas de pesquisa na área de ciência da computação quântica.</li>
                 <li><strong>Universidade de Stanford:</strong> Stanford, nos Estados Unidos, é uma instituição líder em pesquisa em ciência da computação e oferece cursos relacionados à computação quântica.</li>
             </ul>
+
+            <h2>Depoimentos:</h2>
+            <div id="depoimentos">
+                <div id="dep1">
+                    <p>“Eu diria que hoje a computação quântica não tem uma utilidade prática, mas as empresas estão num ponto de investir para um futuro em que ela tenha.”
+                    </p>
+                    <h3>Bruna Shinohara de Mendonça, pesquisadora e cientista da USP - <a href="https://www.linkedin.com/in/bruna-shinohara-de-mendonca" target="_blank">Linkedin</a></h3>
+                </div>
+                <div id="dep2">
+                    <p>"O mercado financeiro vê na computação quântica um potencial estratégico para ampliar seus negócios. Quando a gente vai fazer análise de risco, precificação de derivativo, se eu fazer uma simulação perfeita, ela nunca vai terminar de rodar".
+                    </p>
+                    <h3>Cíntia Scovine Barcelos, diretora de tecnologia do Bradesco - <a href="https://www.linkedin.com/in/cintia-barcelos" target="_blank">Linkedin</a></h3>
+                </div>
+            </div>
         </section>
-        <section class="container" id="aplicações">
+        <section class="container" id="aplicacoes">
+            <h1>Aplicações Práticas da Computação Quântica</h1>
+
+            <h2>Setores e Indústrias que Podem se Beneficiar</h2>
+            
+            <p><strong>Finanças:</strong> Aprimoramento na gestão de portfólios, avaliação de riscos e simulações mais rápidas e precisas.</p>
+            
+            <p><strong>Saúde:</strong> Avanços na descoberta de medicamentos, simulação molecular para desenvolvimento de novos tratamentos.</p>
+            
+            <p><strong>Logística e Cadeia de Suprimentos:</strong> Melhorias na otimização de rotas, alocação eficiente de recursos e resolução de desafios logísticos.</p>
+
+            <h2>Segurança e Criptografia</h2>
+            
+            <p>Desenvolvimento de métodos de criptografia mais robustos e seguros para proteger dados sensíveis.</p>
+
+            <h2>Inteligência Artificial (IA)</h2>
+            
+            <p>Aceleração do treinamento e análise de grandes conjuntos de dados para avanços na IA.</p>
+
+            <h2>Estudos de Caso e Exemplos Reais</h2>
+            
+            <p><strong>Google Quantum Supremacy:</strong> A Google demonstrou a superioridade quântica com o experimento "Sycamore", realizando tarefas mais rapidamente do que os supercomputadores convencionais.</p>
+            
+            <p><strong>Simulação de Moléculas:</strong> Uso de computadores quânticos para simular interações moleculares, contribuindo para a descoberta de novos materiais e medicamentos.</p>
+            
+            <p><strong>Algoritmos de Otimização:</strong> Aplicações práticas na resolução ágil de problemas complexos, como roteamento logístico.</p>
+            
+            <p><strong>Criptografia Quântica:</strong> Desenvolvimento de sistemas de criptografia avançados para elevar a segurança da comunicação.</p>
+
+            <h2>Impacto Potencial no Campo da Ciência da Computação</h2>
+            
+            <p><strong>Algoritmos Quânticos:</strong> Criação de algoritmos mais eficientes para resolver desafios específicos, como fatorização de números grandes.</p>
+            
+            <p><strong>Inovações em Machine Learning:</strong> Melhoria na velocidade de treinamento e execução de modelos de machine learning.</p>
+            
+            <p><strong>Avanços em Inteligência Artificial:</strong> Aplicações mais avançadas em IA, aproveitando o processamento paralelo dos qubits.</p>
+            
+            <p><strong>Resolução de Problemas Intratáveis:</strong> Abordagem de problemas atualmente impossíveis ou extremamente demorados para os computadores convencionais.</p>
 
         </section>
-        <section class="container" id="matematica"></section>
+        <section class="container" id="desafios">
+            <h1>Desafios Atuais na Computação Quântica</h1>
+            <h2>Estabilidade Quântica:</h2>
+            <p>Manter a estabilidade dos qubits enfrentando problemas de decoerência e ruído quântico no ambiente.</p>
+
+            <h2>Correção de Erros:</h2>
+            <p>Desenvolver técnicas eficazes para corrigir erros quânticos e assegurar a precisão dos cálculos.</p>
+
+            <h2>Desafios de Hardware:</h2>
+            <p>Superar obstáculos técnicos e de engenharia no desenvolvimento e manutenção de hardware quântico.</p>
+
+            <h2>Eficiência de Algoritmos:</h2>
+            <p>Criar algoritmos quânticos eficientes e aplicáveis para resolver problemas práticos.</p>
+
+            <h2>Escalabilidade:</h2>
+            <p>Encontrar soluções para problemas de escalabilidade ao lidar com sistemas quânticos mais complexos.</p>
+
+            <h1>Oportunidades de Pesquisa e Desenvolvimento</h1>
+            <h2>Criptografia Quântica:</h2>
+            <p>Avançar em sistemas de criptografia quântica para garantir comunicações seguras.</p>
+
+            <h2>Simulações Moleculares:</h2>
+            <p>Explorar pesquisas em simulações moleculares para impulsionar a descoberta de novos materiais e medicamentos.</p>
+
+            <h2>Algoritmos Específicos:</h2>
+            <p>Projetar algoritmos quânticos especializados para áreas como otimização, machine learning e inteligência artificial.</p>
+
+            <h2>Hardware Robusto:</h2>
+            <p>Pesquisar e desenvolver hardware quântico mais resistente e fácil de manter.</p>
+
+            <h2>Aplicações em Energia e Meio Ambiente:</h2>
+            <p>Investigar aplicações quânticas para resolver desafios relacionados à eficiência energética e modelagem ambiental.</p>
+
+            <h1>Contribuições dos Profissionais para Avanços na Área</h1>
+            <h2>Atualização Constante:</h2>
+            <p>Manter-se informado sobre as últimas pesquisas por meio de cursos, workshops e participação em conferências.</p>
+
+            <h2>Engajamento Comunitário:</h2>
+            <p>Participar de comunidades online e grupos de pesquisa para colaborar em projetos e compartilhar conhecimentos.</p>
+
+            <h2>Desenvolvimento de Algoritmos:</h2>
+            <p>Contribuir para a criação de algoritmos quânticos, oferecendo soluções práticas para problemas específicos.</p>
+
+            <h2>Experiência Prática:</h2>
+            <p>Engajar-se em experimentos práticos em plataformas quânticas online para adquirir habilidades hands-on.</p>
+
+            <h2>Colaboração Interdisciplinar:</h2>
+            <p>Colaborar com profissionais de áreas relacionadas para abordar desafios de maneira abrangente e inovadora.</p>
+
+        </section>
+        <section class="container" id="matematica">
+        </section>
     </main>
-    <script>
-        var button = document.querySelector("button");
-        var ul = document.querySelector("ul");
-
-        button.addEventListener("click", function () {
-            ul.classList.toggle("show");
-        });
-
-        ul.querySelectorAll("a").forEach(function (evt) {
-            evt.addEventListener("click", function () {
-                ul.classList.remove("show");
-            });
-        });
-    </script>
 </body>
 </html>
