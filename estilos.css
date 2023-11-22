@@ -48,11 +48,13 @@ section.container {
 #definicao {
     border: 3px dashed #011638ff;
     padding: 5px 30px;
+    border-radius: 1rem;
 }
 
 #qubit, #quantum {
     padding: 5px 30px;
     border: 3px dashed #011638ff;
+    border-radius: 1rem;
 }
 
 .bloco {
@@ -67,6 +69,7 @@ img {
     max-width: 92%;
     margin-bottom: 15px;
     border: 1px solid black;
+    border-radius: 1rem;
 }
 
 #sobreposicao, #emaranhamento, #interferencia, #entrelacamento, #evolucao {
@@ -74,7 +77,10 @@ img {
     text-align: center;
     border: 3px dashed #011638ff;
     padding: 5px 30px;
+    border-radius: 1rem;
 }
+
+
 
 #recursos p {
     font-size: 17px;
@@ -188,6 +194,7 @@ table {
     padding-top: 10px;
     padding-bottom: 25px;
     border: 3px dashed #011638ff;
+    border-radius: 1rem;
 }
 
 th, tr, td {
