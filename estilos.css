@@ -257,7 +257,7 @@ p#chamada {
     width: 85%;
 }
 
-#comoingressar h2:before, #aplicacoes h2:before, #desafios h2:before {
+#comoingressar h2:before, #aplicacoes h2:before, #desafios h2:before, #matematica h2:before {
     content: "▶ ";
     letter-spacing: 4px;
 }
@@ -290,10 +290,15 @@ p#chamada {
     text-indent: 0;
 }
 
-#comoingressar ul, #aplicacoes ul {
+#comoingressar ul, #aplicacoes ul, #desafios ol, #matematica ol {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     padding-left: 20px;
+}
+
+#matematica ol li {
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .espaco {
@@ -314,6 +319,10 @@ p#chamada {
 }
 
 @media (max-width: 910px) {
+    iframe {
+        height: auto;
+        width: auto;
+    }
     #botoes{
         column-gap: 15px;
     }
