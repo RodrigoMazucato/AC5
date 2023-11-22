@@ -309,6 +309,10 @@ p#chamada {
     padding: 20px 0;
 }
 
+.setores {
+    padding-bottom: 20px;
+}
+
 @media (max-width: 910px) {
     #botoes{
         column-gap: 15px;
