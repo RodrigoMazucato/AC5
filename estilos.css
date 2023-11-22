@@ -6,7 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 h1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -222,13 +221,13 @@ th {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: bold;
-    width: 300px;
+    width: 30%;
     text-align: center;
     padding: 15px;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    margin-top: 260px;
+    margin-top: 250px;
     transition-duration: 0.4s;
     background-color: rgb(2, 120, 138);
     border-radius: 10px;
@@ -284,14 +283,13 @@ p#chamada {
     text-indent: 0;
 }
 
-#comoingressar ul {
+#comoingressar ul, #aplicacoes ul {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    list-style-type: disc;
     font-size: 16px;
     padding-left: 20px;
 }
 
-.educacao {
+.espaco {
     margin-bottom: 15px;
 }
 
@@ -299,7 +297,18 @@ p#chamada {
     margin-top: 40px;
 }
 
+.barra h1 {
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+}
+
 @media (max-width: 910px) {
+    #botoes{
+        column-gap: 15px;
+    }
+    .botao {
+        width: 40%;
+    }
     #depoimentos {
         flex-direction: column;
         row-gap: 30px;
@@ -378,5 +387,11 @@ p#chamada {
     }
     tr, td {
         font-size: 15px;
+    }
+}
+
+@media (max-width: 1200px){
+    #saibamais{
+        padding-top: 25px;
     }
 }
