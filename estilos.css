@@ -430,15 +430,27 @@ p#chamada {
 
 @media (max-width: 480px) {
     .botao {
+        width: 40%;
+        padding: 14px;
+        margin-top: 120px;
         font-size: 15px;
     }
+
+    #banner {
+        height: 350px;
+    }
+    
+    #saibamais{
+        padding: 15px 20px;
+    }
+
     p#chamada {
         text-indent: 0;
         width: 90%;
         font-size: 20px;
-        margin-top: 30px;
+        margin-top: 25px;
     }
-    p{
+    p {
         text-indent: 1.5rem;
         font-size: 14px;
     }
@@ -458,7 +470,7 @@ p#chamada {
     button {
         right: 15px;
     }
-
+    
     #titulo {
         font-size: 16px;
     }
@@ -478,6 +490,7 @@ p#chamada {
     }
 
     #tabela_comparativa {
+        margin-top: 20px;
         padding-bottom: 25px;
         border: none;
     }
@@ -496,7 +509,7 @@ p#chamada {
         font-size: 20px;
     }
 
-    #comoingressar ul, #aplicacoes ul, #desafios ol, #matematica ol {
+    #comoingressar ul, #aplicacoes ul, #desafios ol {
         font-size: 14px;
         text-align: justify;
     }
@@ -529,7 +542,9 @@ p#chamada {
         margin-top: 0;
     }
 
-    #matematica ol {
+    #matematica ol li {
+        font-size: 14px;
+        line-height: 10px;
         text-align: left;
     }
 }
