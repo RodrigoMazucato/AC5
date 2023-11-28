@@ -83,8 +83,6 @@ img {
     
 }
 
-
-
 #recursos p {
     font-size: 17px;
     text-align: center;
@@ -549,10 +547,9 @@ p#chamada {
     }
 
     :target {
-        scroll-margin-top: 80px;
-
+        scroll-margin-top: 100px;
+    }
     header li a {
         font-size: 14px;
-    }
     }
 }
